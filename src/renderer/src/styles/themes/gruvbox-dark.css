@@ -1,0 +1,44 @@
+html[data-theme='gruvbox-dark'] {
+  --surface-base: #1d2021;
+  --surface-1: #282828;
+  --surface-2: #312e2c;
+  --surface-3: #3c3836;
+  --surface-4: #504945;
+  --surface-input: #1d2021;
+  --surface-stage: #141414;
+
+  --text-primary: #ebdbb2;
+  --text-secondary: #d5c4a1;
+  --text-tertiary: #bdae93;
+  --text-muted: #928374;
+
+  --accent: #fe8019;
+  --accent-bright: #ff9f45;
+  --accent-deep: #d06c10;
+  --accent-ink: #231f1d;
+  --accent-wash: #fe801924;
+  --accent-edge: #fe801985;
+  --accent-glow: #fe80194d;
+
+  --tally: #fb4934;
+  --tally-wash: #fb493424;
+  --tally-edge: #fb493480;
+
+  --signal-good: #b8bb26;
+  --signal-fair: #fabd2f;
+  --signal-poor: #fb4934;
+  --signal-dead: #928374;
+  --danger: #fb4934;
+
+  --rule-faint: #ffffff12;
+  --rule: #ffffff26;
+  --rule-strong: #ffffff47;
+  --rule-accent: #fe80198c;
+  --focus-ring: #ff9f45;
+
+  --scroll-thumb: #ffffff17;
+  --scroll-thumb-hover: #ffffff29;
+
+  --shadow-plate: 0 1px 2px #14141499, 0 6px 20px #14141473;
+  --shadow-pop: 0 2px 4px #14141499, 0 16px 44px #14141499;
+}

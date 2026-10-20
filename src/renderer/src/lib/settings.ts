@@ -3,6 +3,7 @@ import { useSyncExternalStore } from 'react'
 import { setSoundsMuted } from './sounds'
 import type { NoiseSuppression } from '../rtc/mic-chain'
 import type { ScreenProfileName } from '../rtc/sdp'
+import { RACK } from './themes'
 
 /**
  * Everything the app lets you change, in one place.
@@ -66,6 +67,12 @@ export interface Settings {
   railPosition: 'bottom' | 'right'
 
   /**
+   * Interface palette, an id from lib/themes. `rack` is the app's own, and
+   * the one with no file: it is what tokens.css already says.
+   */
+  theme: string
+
+  /**
    * The overlay sheet over a fullscreen game.
    *
    * Off by default: a transparent always-on-top window is something you ask
@@ -119,6 +126,7 @@ export const DEFAULT_SETTINGS: Settings = {
   cameraBackground: false,
   server: '',
   railPosition: 'right',
+  theme: 'rack',
   overlayEnabled: false,
   overlayOpacity: 0.75,
   overlayToggleKey: 'CommandOrControl+Shift+O',
@@ -151,6 +159,14 @@ export function getSettings(): Settings {
   return current
 }
 
+export function applyTheme(theme: string): void {
+  const root = document.documentElement
+  if (theme && theme !== RACK.id) root.dataset.theme = theme
+  else delete root.dataset.theme
+}
+
+applyTheme(current.theme)
+
 export function updateSettings(patch: Partial<Settings>): void {
   current = { ...current, ...patch }
   try {
@@ -159,6 +175,7 @@ export function updateSettings(patch: Partial<Settings>): void {
     // A full or disabled storage must not stop the setting taking effect now.
   }
   if (patch.roomSounds !== undefined) setSoundsMuted(!patch.roomSounds)
+  if (patch.theme !== undefined) applyTheme(current.theme)
   for (const listener of listeners) listener()
 }
 

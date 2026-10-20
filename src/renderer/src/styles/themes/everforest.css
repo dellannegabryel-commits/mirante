@@ -1,0 +1,44 @@
+html[data-theme='everforest'] {
+  --surface-base: #232a2f;
+  --surface-1: #2d353b;
+  --surface-2: #343f44;
+  --surface-3: #3c4841;
+  --surface-4: #47545a;
+  --surface-input: #1f2529;
+  --surface-stage: #1b2125;
+
+  --text-primary: #d3c6aa;
+  --text-secondary: #b8ae95;
+  --text-tertiary: #859289;
+  --text-muted: #68726a;
+
+  --accent: #7fbbb3;
+  --accent-bright: #9dcdc7;
+  --accent-deep: #63a49b;
+  --accent-ink: #1b2a2b;
+  --accent-wash: #7fbbb324;
+  --accent-edge: #7fbbb385;
+  --accent-glow: #7fbbb34d;
+
+  --tally: #e67e80;
+  --tally-wash: #e67e8024;
+  --tally-edge: #e67e8080;
+
+  --signal-good: #a7c080;
+  --signal-fair: #dbbc7f;
+  --signal-poor: #e67e80;
+  --signal-dead: #6f7a6d;
+  --danger: #e67e80;
+
+  --rule-faint: #ffffff12;
+  --rule: #ffffff26;
+  --rule-strong: #ffffff47;
+  --rule-accent: #7fbbb38c;
+  --focus-ring: #9dcdc7;
+
+  --scroll-thumb: #ffffff17;
+  --scroll-thumb-hover: #ffffff29;
+
+  --shadow-plate: 0 1px 2px #1b212599, 0 6px 20px #1b212573;
+  --shadow-pop: 0 2px 4px #1b212599, 0 16px 44px #1b212599;
+}

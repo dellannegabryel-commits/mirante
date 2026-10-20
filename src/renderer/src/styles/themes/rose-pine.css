@@ -1,0 +1,44 @@
+html[data-theme='rose-pine'] {
+  --surface-base: #121019;
+  --surface-1: #191724;
+  --surface-2: #1f1d2e;
+  --surface-3: #26233a;
+  --surface-4: #35314a;
+  --surface-input: #0f0d15;
+  --surface-stage: #0d0b13;
+
+  --text-primary: #e0def4;
+  --text-secondary: #c9c5da;
+  --text-tertiary: #908caa;
+  --text-muted: #6e6a86;
+
+  --accent: #c4a7e7;
+  --accent-bright: #d7c9f1;
+  --accent-deep: #a58ad4;
+  --accent-ink: #1f1333;
+  --accent-wash: #c4a7e724;
+  --accent-edge: #c4a7e785;
+  --accent-glow: #c4a7e74d;
+
+  --tally: #eb6f92;
+  --tally-wash: #eb6f9224;
+  --tally-edge: #eb6f9280;
+
+  --signal-good: #9ccfd8;
+  --signal-fair: #f6c177;
+  --signal-poor: #eb6f92;
+  --signal-dead: #6e6a86;
+  --danger: #eb6f92;
+
+  --rule-faint: #ffffff12;
+  --rule: #ffffff26;
+  --rule-strong: #ffffff47;
+  --rule-accent: #c4a7e78c;
+  --focus-ring: #d7c9f1;
+
+  --scroll-thumb: #ffffff17;
+  --scroll-thumb-hover: #ffffff29;
+
+  --shadow-plate: 0 1px 2px #0d0b1399, 0 6px 20px #0d0b1373;
+  --shadow-pop: 0 2px 4px #0d0b1399, 0 16px 44px #0d0b1399;
+}

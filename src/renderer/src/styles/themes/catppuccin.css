@@ -1,0 +1,44 @@
+html[data-theme='catppuccin'] {
+  --surface-base: #11111b;
+  --surface-1: #1e1e2e;
+  --surface-2: #26273a;
+  --surface-3: #313244;
+  --surface-4: #45475a;
+  --surface-input: #171724;
+  --surface-stage: #0d0d16;
+
+  --text-primary: #cdd6f4;
+  --text-secondary: #bac2de;
+  --text-tertiary: #a6adc8;
+  --text-muted: #6c7086;
+
+  --accent: #cba6f7;
+  --accent-bright: #dbc6ff;
+  --accent-deep: #a682ec;
+  --accent-ink: #20153c;
+  --accent-wash: #cba6f724;
+  --accent-edge: #cba6f785;
+  --accent-glow: #cba6f74d;
+
+  --tally: #f38ba8;
+  --tally-wash: #f38ba824;
+  --tally-edge: #f38ba880;
+
+  --signal-good: #a6e3a1;
+  --signal-fair: #f9e2af;
+  --signal-poor: #f38ba8;
+  --signal-dead: #585b70;
+  --danger: #f38ba8;
+
+  --rule-faint: #ffffff12;
+  --rule: #ffffff26;
+  --rule-strong: #ffffff47;
+  --rule-accent: #cba6f78c;
+  --focus-ring: #dbc6ff;
+
+  --scroll-thumb: #ffffff17;
+  --scroll-thumb-hover: #ffffff29;
+
+  --shadow-plate: 0 1px 2px #0d0d1699, 0 6px 20px #0d0d1673;
+  --shadow-pop: 0 2px 4px #0d0d1699, 0 16px 44px #0d0d1699;
+}

@@ -1,0 +1,44 @@
+html[data-theme='tokyo-night'] {
+  --surface-base: #13141c;
+  --surface-1: #1a1b26;
+  --surface-2: #212333;
+  --surface-3: #292c40;
+  --surface-4: #34374f;
+  --surface-input: #101119;
+  --surface-stage: #0e0f16;
+
+  --text-primary: #c0caf5;
+  --text-secondary: #a9b1d6;
+  --text-tertiary: #7d84a3;
+  --text-muted: #565f89;
+
+  --accent: #7aa2f7;
+  --accent-bright: #97b7fb;
+  --accent-deep: #5a86e0;
+  --accent-ink: #17213b;
+  --accent-wash: #7aa2f724;
+  --accent-edge: #7aa2f785;
+  --accent-glow: #7aa2f74d;
+
+  --tally: #f7768e;
+  --tally-wash: #f7768e24;
+  --tally-edge: #f7768e80;
+
+  --signal-good: #9ece6a;
+  --signal-fair: #e0af68;
+  --signal-poor: #f7768e;
+  --signal-dead: #414868;
+  --danger: #f7768e;
+
+  --rule-faint: #ffffff12;
+  --rule: #ffffff26;
+  --rule-strong: #ffffff47;
+  --rule-accent: #7aa2f78c;
+  --focus-ring: #97b7fb;
+
+  --scroll-thumb: #ffffff17;
+  --scroll-thumb-hover: #ffffff29;
+
+  --shadow-plate: 0 1px 2px #0e0f1699, 0 6px 20px #0e0f1673;
+  --shadow-pop: 0 2px 4px #0e0f1699, 0 16px 44px #0e0f1699;
+}

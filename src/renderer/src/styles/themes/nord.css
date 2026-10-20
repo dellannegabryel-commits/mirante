@@ -1,0 +1,44 @@
+html[data-theme='nord'] {
+  --surface-base: #262b36;
+  --surface-1: #2e3440;
+  --surface-2: #3b4252;
+  --surface-3: #434c5e;
+  --surface-4: #4c566a;
+  --surface-input: #222733;
+  --surface-stage: #1e232e;
+
+  --text-primary: #eceff4;
+  --text-secondary: #d8dee9;
+  --text-tertiary: #9aa5b8;
+  --text-muted: #7b88a1;
+
+  --accent: #88c0d0;
+  --accent-bright: #a3d5e1;
+  --accent-deep: #5e81ac;
+  --accent-ink: #1f2530;
+  --accent-wash: #88c0d024;
+  --accent-edge: #88c0d085;
+  --accent-glow: #88c0d04d;
+
+  --tally: #bf616a;
+  --tally-wash: #bf616a24;
+  --tally-edge: #bf616a80;
+
+  --signal-good: #a3be8c;
+  --signal-fair: #ebcb8b;
+  --signal-poor: #bf616a;
+  --signal-dead: #616a7d;
+  --danger: #bf616a;
+
+  --rule-faint: #ffffff12;
+  --rule: #ffffff26;
+  --rule-strong: #ffffff47;
+  --rule-accent: #88c0d08c;
+  --focus-ring: #a3d5e1;
+
+  --scroll-thumb: #ffffff17;
+  --scroll-thumb-hover: #ffffff29;
+
+  --shadow-plate: 0 1px 2px #1e232e99, 0 6px 20px #1e232e73;
+  --shadow-pop: 0 2px 4px #1e232e99, 0 16px 44px #1e232e99;
+}

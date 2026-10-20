@@ -1,0 +1,44 @@
+html[data-theme='github-light'] {
+  --surface-base: #f6f8fa;
+  --surface-1: #ffffff;
+  --surface-2: #f3f5f8;
+  --surface-3: #e9edf2;
+  --surface-4: #dce1e8;
+  --surface-input: #f0f3f7;
+  --surface-stage: #0d1117;
+
+  --text-primary: #1f2328;
+  --text-secondary: #42474e;
+  --text-tertiary: #59626c;
+  --text-muted: #656d76;
+
+  --accent: #0969da;
+  --accent-bright: #2184e5;
+  --accent-deep: #0755ad;
+  --accent-ink: #ffffff;
+  --accent-wash: #0969da24;
+  --accent-edge: #0969da85;
+  --accent-glow: #0969da4d;
+
+  --tally: #cf222e;
+  --tally-wash: #cf222e24;
+  --tally-edge: #cf222e80;
+
+  --signal-good: #1a7f37;
+  --signal-fair: #9a6700;
+  --signal-poor: #cf222e;
+  --signal-dead: #656d76;
+  --danger: #cf222e;
+
+  --rule-faint: #00000012;
+  --rule: #00000026;
+  --rule-strong: #00000047;
+  --rule-accent: #0969da8c;
+  --focus-ring: #2184e5;
+
+  --scroll-thumb: #0000001a;
+  --scroll-thumb-hover: #0000002e;
+
+  --shadow-plate: 0 1px 2px #0000001a, 0 6px 20px #00000014;
+  --shadow-pop: 0 2px 4px #00000024, 0 16px 44px #00000029;
+}

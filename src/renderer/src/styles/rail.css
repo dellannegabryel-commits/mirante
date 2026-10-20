@@ -481,12 +481,12 @@
   /* Grows upward from the floor, the way a level does. */
   transform-origin: bottom center;
   border-radius: inherit;
-  background: hsl(152 60% 52%);
+  background: var(--signal-good);
 }
 
 /* Past normal. The colour is the warning; the length only says how far. */
 .tm-tile__scrub-fill[data-boost='true'] {
-  background: hsl(44 92% 58%);
+  background: var(--signal-fair);
 }
 
 .tm-tile__scrub-value {
@@ -494,6 +494,6 @@
   border-radius: 6px;
   font-size: 10px;
   letter-spacing: 0.02em;
-  color: hsl(258 20% 92%);
+  color: var(--text-primary);
   background: hsl(258 40% 2% / 0.85);
 }

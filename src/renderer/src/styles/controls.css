@@ -87,7 +87,7 @@
 }
 .tm-seg.is-on {
   background: var(--accent);
-  color: hsl(220 30% 6%);
+  color: var(--accent-ink);
 }
 
 /* --- volume ------------------------------------------------------------ */
@@ -415,7 +415,7 @@
 }
 .tm-flag.is-good {
   color: var(--signal-good);
-  border-color: hsl(158 54% 58% / 0.34);
+  border-color: hsl(from var(--signal-good) h s l / 0.34);
 }
 .tm-flag.is-warn {
   color: var(--accent);
@@ -804,6 +804,59 @@
   border-top: 1px solid var(--rule-faint);
 }
 
+.tm-themes__hint {
+  margin: 0 0 var(--s-2);
+  font-size: var(--text-micro);
+  color: var(--text-secondary);
+}
+.tm-themes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-2);
+}
+.tm-theme {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-2);
+  text-align: left;
+  background: var(--surface-input);
+  border: 1px solid var(--rule);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.tm-theme:hover {
+  border-color: var(--rule-strong);
+  color: var(--text-primary);
+}
+.tm-theme.is-on {
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+.tm-theme.is-on .tm-theme__name {
+  color: var(--accent);
+}
+.tm-theme__chips {
+  display: flex;
+  gap: 3px;
+}
+.tm-theme__chips i {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--rule);
+}
+.tm-theme__name {
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+}
+.tm-theme__mode {
+  font-size: var(--text-nano);
+  color: var(--text-muted);
+}
+
 .tm-setrow {
   display: flex;
   align-items: center;
@@ -881,7 +934,7 @@
   border-radius: inherit;
   /* Green through amber to red across the travel, so "too hot" is a colour
      you notice without reading a number. */
-  background: linear-gradient(90deg, hsl(152 60% 48%), hsl(44 92% 58%) 78%, hsl(4 84% 60%));
+  background: linear-gradient(90deg, var(--signal-good), var(--signal-fair) 78%, var(--tally));
 }
 
 /* Native select, styled to match. Composing a headless listbox would buy
@@ -1890,7 +1943,7 @@
 
 .tm-xfer__error {
   font-size: var(--text-nano);
-  color: var(--danger, #e5484d);
+  color: var(--danger);
 }
 
 .tm-xfer__actions {

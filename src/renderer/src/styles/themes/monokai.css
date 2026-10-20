@@ -1,0 +1,44 @@
+html[data-theme='monokai'] {
+  --surface-base: #1e1f1a;
+  --surface-1: #272822;
+  --surface-2: #31322b;
+  --surface-3: #3a3b33;
+  --surface-4: #47483f;
+  --surface-input: #1a1b16;
+  --surface-stage: #141510;
+
+  --text-primary: #f8f8f2;
+  --text-secondary: #d3d3c8;
+  --text-tertiary: #98988a;
+  --text-muted: #75715e;
+
+  --accent: #66d9ef;
+  --accent-bright: #8ce3f2;
+  --accent-deep: #4db4cc;
+  --accent-ink: #16222a;
+  --accent-wash: #66d9ef24;
+  --accent-edge: #66d9ef85;
+  --accent-glow: #66d9ef4d;
+
+  --tally: #f92672;
+  --tally-wash: #f9267224;
+  --tally-edge: #f9267280;
+
+  --signal-good: #a6e22e;
+  --signal-fair: #e6db74;
+  --signal-poor: #f92672;
+  --signal-dead: #75715e;
+  --danger: #f92672;
+
+  --rule-faint: #ffffff12;
+  --rule: #ffffff26;
+  --rule-strong: #ffffff47;
+  --rule-accent: #66d9ef8c;
+  --focus-ring: #8ce3f2;
+
+  --scroll-thumb: #ffffff17;
+  --scroll-thumb-hover: #ffffff29;
+
+  --shadow-plate: 0 1px 2px #14151099, 0 6px 20px #14151073;
+  --shadow-pop: 0 2px 4px #14151099, 0 16px 44px #14151099;
+}

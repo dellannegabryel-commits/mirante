@@ -10,6 +10,7 @@ import {
   type DeviceList
 } from '../lib/settings'
 import { formatVolume } from '../lib/format'
+import { THEMES } from '../lib/themes'
 import { micLevel, type NoiseSuppression } from '../rtc/mic-chain'
 import { SCREEN_PROFILES, type ScreenProfileName } from '../rtc/sdp'
 import { IconClose } from './icons'
@@ -376,6 +377,30 @@ export function SettingsModal({
               </div>
             </Row>
           </Group>
+
+              <Group title="Aparência">
+                <p className="tm-themes__hint">
+                  Vale na hora, sem salvar. O overlay fica escuro em qualquer tema.
+                </p>
+                <div className="tm-themes">
+                  {THEMES.map((theme) => (
+                    <button
+                      key={theme.id}
+                      type="button"
+                      className={`tm-theme${settings.theme === theme.id ? ' is-on' : ''}`}
+                      onClick={() => updateSettings({ theme: theme.id })}
+                    >
+                      <span className="tm-theme__chips">
+                        {theme.chips.map((chip) => (
+                          <i key={chip} style={{ background: chip }} />
+                        ))}
+                      </span>
+                      <span className="tm-theme__name">{theme.name}</span>
+                      <span className="tm-theme__mode num">{theme.mode}</span>
+                    </button>
+                  ))}
+                </div>
+              </Group>
             </>
           )}
 

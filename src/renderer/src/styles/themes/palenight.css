@@ -1,0 +1,44 @@
+html[data-theme='palenight'] {
+  --surface-base: #232634;
+  --surface-1: #292d3e;
+  --surface-2: #323648;
+  --surface-3: #3a3e52;
+  --surface-4: #434758;
+  --surface-input: #1f2231;
+  --surface-stage: #191c27;
+
+  --text-primary: #a6accd;
+  --text-secondary: #98a0c2;
+  --text-tertiary: #7d85a8;
+  --text-muted: #676e95;
+
+  --accent: #82aaff;
+  --accent-bright: #9fc0ff;
+  --accent-deep: #638ee0;
+  --accent-ink: #17203c;
+  --accent-wash: #82aaff24;
+  --accent-edge: #82aaff85;
+  --accent-glow: #82aaff4d;
+
+  --tally: #ff5370;
+  --tally-wash: #ff537024;
+  --tally-edge: #ff537080;
+
+  --signal-good: #c3e88d;
+  --signal-fair: #ffcb6b;
+  --signal-poor: #ff5370;
+  --signal-dead: #676e95;
+  --danger: #ff5370;
+
+  --rule-faint: #ffffff12;
+  --rule: #ffffff26;
+  --rule-strong: #ffffff47;
+  --rule-accent: #82aaff8c;
+  --focus-ring: #9fc0ff;
+
+  --scroll-thumb: #ffffff17;
+  --scroll-thumb-hover: #ffffff29;
+
+  --shadow-plate: 0 1px 2px #191c2799, 0 6px 20px #191c2773;
+  --shadow-pop: 0 2px 4px #191c2799, 0 16px 44px #191c2799;
+}

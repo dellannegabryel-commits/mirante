@@ -1,0 +1,44 @@
+html[data-theme='dracula'] {
+  --surface-base: #20222d;
+  --surface-1: #282a36;
+  --surface-2: #313443;
+  --surface-3: #3a3d4d;
+  --surface-4: #44475a;
+  --surface-input: #1e202a;
+  --surface-stage: #16171f;
+
+  --text-primary: #f8f8f2;
+  --text-secondary: #c6c8d6;
+  --text-tertiary: #9aa0b3;
+  --text-muted: #6272a4;
+
+  --accent: #bd93f9;
+  --accent-bright: #d0b6ff;
+  --accent-deep: #9a76e3;
+  --accent-ink: #201a33;
+  --accent-wash: #bd93f924;
+  --accent-edge: #bd93f985;
+  --accent-glow: #bd93f94d;
+
+  --tally: #ff5555;
+  --tally-wash: #ff555524;
+  --tally-edge: #ff555580;
+
+  --signal-good: #50fa7b;
+  --signal-fair: #f1fa8c;
+  --signal-poor: #ff5555;
+  --signal-dead: #6b7086;
+  --danger: #ff5555;
+
+  --rule-faint: #ffffff12;
+  --rule: #ffffff26;
+  --rule-strong: #ffffff47;
+  --rule-accent: #bd93f98c;
+  --focus-ring: #d0b6ff;
+
+  --scroll-thumb: #ffffff17;
+  --scroll-thumb-hover: #ffffff29;
+
+  --shadow-plate: 0 1px 2px #16171f99, 0 6px 20px #16171f73;
+  --shadow-pop: 0 2px 4px #16171f99, 0 16px 44px #16171f99;
+}

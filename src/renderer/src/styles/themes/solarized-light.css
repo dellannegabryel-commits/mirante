@@ -1,0 +1,44 @@
+html[data-theme='solarized-light'] {
+  --surface-base: #eee8d5;
+  --surface-1: #fdf6e3;
+  --surface-2: #f4eeda;
+  --surface-3: #eae3ce;
+  --surface-4: #ddd5bd;
+  --surface-input: #e9e2cd;
+  --surface-stage: #002b36;
+
+  --text-primary: #073642;
+  --text-secondary: #586e75;
+  --text-tertiary: #657b83;
+  --text-muted: #93a1a1;
+
+  --accent: #1669a0;
+  --accent-bright: #1a76b5;
+  --accent-deep: #0f4f78;
+  --accent-ink: #fdf6e3;
+  --accent-wash: #1669a024;
+  --accent-edge: #1669a085;
+  --accent-glow: #1669a04d;
+
+  --tally: #dc322f;
+  --tally-wash: #dc322f24;
+  --tally-edge: #dc322f80;
+
+  --signal-good: #6d7f00;
+  --signal-fair: #9a6700;
+  --signal-poor: #dc322f;
+  --signal-dead: #93a1a1;
+  --danger: #dc322f;
+
+  --rule-faint: #00000012;
+  --rule: #00000026;
+  --rule-strong: #00000047;
+  --rule-accent: #1669a08c;
+  --focus-ring: #1a76b5;
+
+  --scroll-thumb: #0000001a;
+  --scroll-thumb-hover: #0000002e;
+
+  --shadow-plate: 0 1px 2px #0000001a, 0 6px 20px #00000014;
+  --shadow-pop: 0 2px 4px #00000024, 0 16px 44px #00000029;
+}

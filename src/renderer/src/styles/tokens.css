@@ -63,6 +63,9 @@
   --signal-poor: hsl(352 85% 63%);
   --signal-dead: hsl(258 10% 26%);
 
+  /* Failures, refused, broken. */
+  --danger: hsl(356 71% 59%);
+
   /* --- rules ------------------------------------------------------------ */
   /* Stronger than the usual apologetic 5%. These are structure; you are meant
      to see the grid. */
@@ -71,6 +74,10 @@
   --rule-strong: hsl(260 30% 100% / 0.28);
   --rule-accent: hsl(263 88% 72% / 0.55);
   --focus-ring: hsl(263 96% 82%);
+
+  /* Scrollbar thumbs, which otherwise only know white. */
+  --scroll-thumb: hsl(0 0% 100% / 0.09);
+  --scroll-thumb-hover: hsl(0 0% 100% / 0.16);
 
   /* --- type ------------------------------------------------------------- */
   /* Archivo: a grotesque with signage bones, pushed to heavy weights and
