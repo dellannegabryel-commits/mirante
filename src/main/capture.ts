@@ -204,11 +204,10 @@ export function registerCapture(): void {
     armed = null
   })
 
-  // On Linux the picker belongs inside this handler: PipeWire hands out one
-  // delegated source at a time, and its id can change between getSources()
-  // calls. Asking here means Chromium receives the id of the session the user
-  // just picked. A cancelled portal picker gives us no source: callback(null)
-  // is the clean decline Electron documents, unlike callback({}) below.
+  // On Linux, getSources() shows the xdg-desktop-portal picker itself. The
+  // handler has to ask for a source inside the request: an id armed before
+  // the picker ran belongs to a session that is already gone. callback(null)
+  // is the clean decline when the user cancels the portal picker.
   if (process.platform === 'linux') {
     session.defaultSession.setDisplayMediaRequestHandler(async (_request, callback) => {
       try {
