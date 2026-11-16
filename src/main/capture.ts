@@ -35,6 +35,13 @@ import { audioAddonReady, pidForWindow } from './process-audio'
  * then calls `getDisplayMedia()`, which the handler satisfies immediately from
  * the armed value. Cancelling never reaches Chromium at all, because the
  * request is never made.
+ *
+ * Linux/PipeWire is the exception. There, `getSources()` delegates the source
+ * list to xdg-desktop-portal and shows its picker; a fresh session can return
+ * a different source id, so an id armed before the picker ran goes stale and
+ * `getDisplayMedia()` fails. The Linux handler therefore calls `getSources()`
+ * itself, inside the display-media request, and serves the live result.
+ * Cancelling that portal picker rejects cleanly via `callback(null)`.
  */
 
 /** A capture source, flattened for IPC (native objects do not cross the bridge). */
@@ -196,6 +203,31 @@ export function registerCapture(): void {
     if (armed) log('capture', 'disarmed')
     armed = null
   })
+
+  // On Linux the picker belongs inside this handler: PipeWire hands out one
+  // delegated source at a time, and its id can change between getSources()
+  // calls. Asking here means Chromium receives the id of the session the user
+  // just picked. A cancelled portal picker gives us no source: callback(null)
+  // is the clean decline Electron documents, unlike callback({}) below.
+  if (process.platform === 'linux') {
+    session.defaultSession.setDisplayMediaRequestHandler(async (_request, callback) => {
+      try {
+        const sources = await readSources(false)
+        const source = sources[0]
+        if (!source) {
+          log('capture', 'no source from the portal picker — declining')
+          callback(null)
+          return
+        }
+        log('capture', `granting "${source.name}" (portal)`)
+        callback({ video: source })
+      } catch (error) {
+        log('capture', 'portal picker failed:', String(error))
+        callback(null)
+      }
+    })
+    return
+  }
 
   session.defaultSession.setDisplayMediaRequestHandler(
     (_request, callback) => {
