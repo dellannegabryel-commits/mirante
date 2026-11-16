@@ -32,6 +32,7 @@ win:
 linux:
   icon: build/icon.png
   category: AudioVideo
+  maintainer: Mirante <contato@mirante.app>
   target:
     - target: deb
       arch: [x64]
